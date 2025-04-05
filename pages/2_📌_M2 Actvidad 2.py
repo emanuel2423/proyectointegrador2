@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-import os
-print(os.getcwd())
+
 
 
 # Configuración de la página
@@ -12,12 +11,12 @@ st.set_page_config(
 )
 
 def load_data():
-    return pd.read_csv("pages\static\datasets\estudiantes_colombia.csv")
+    return pd.read_csv("pages/static/datasets/estudiantes_colombia.csv")
 
 st.title("Análisis de Estudiantes en Colombia")
 
 st.header("Semana 8")
-df = pd.read_csv("pages\\static\\datasets\\estudiantes_colombia.csv")
+df = pd.read_csv("pages/static/datasets/estudiantes_colombia.csv")
 
 
 st.dataframe(df)
